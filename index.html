@@ -26,7 +26,8 @@ L.control.layers({
     'Satellite': L.mapbox.tileLayer('landplanner.jm6gk0ba')
 }, {
     'SenseFly Imagery': L.tileLayer('movegas/{z}/{x}/{y}.png', {attribution: 'SenseFly UAV Imagery provided by the UVM SAL'}),
-    'Property Boundaries': omnivore.geojson('morristown_corners.geojson')
+    'Property Boundaries': omnivore.geojson('morristown_corners.geojson'),
+    'e911 Road Centerlines': omnivore.geojson('morristown_corners_rds.geojson')
 }).addTo(map);
 </script>
 
