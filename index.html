@@ -18,15 +18,15 @@
 
 <script>
 L.mapbox.accessToken = 'pk.eyJ1IjoibGFuZHBsYW5uZXIiLCJhIjoicUtlZGgwYyJ9.UFYz8MD4lI4kIzk9bjGFvg';
-var map = L.map('map').setView([44.55490, -72.61390], 14);
+var map = L.map('map').setView([44.55490, -72.61390], 15);
 
 L.control.layers({
     'Base Map': L.mapbox.tileLayer('landplanner.h3mhoan3').addTo(map),
     'Satellite': L.mapbox.tileLayer('landplanner.jm6gk0ba')
-}/*, {
-    'Bike Stations': L.mapbox.tileLayer('examples.bike-locations'),
+}, {
+    'SenseFly Imagery': L.mapbox.tileLayer('examples.bike-locations'),
     'Bike Lanes': L.mapbox.tileLayer('examples.bike-lanes')
-}*/).addTo(map);
+}).addTo(map);
 </script>
 
 
