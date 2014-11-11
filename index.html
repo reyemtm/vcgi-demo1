@@ -38,15 +38,17 @@
   </div>
 
 <script>
-L.mapbox.accessToken = 'pk.eyJ1IjoibGFuZHBsYW5uZXIiLCJhIjoicUtlZGgwYyJ9.UFYz8MD4lI4kIzk9bjGFvg';
+L.mapbox.accessToken = 'pk.eyJ1IjoicmV5ZW10bSIsImEiOiJCTHUxSVZ3In0.Q-qbg_jG0JcT6bfBeiwXQg';
 var map = L.map('map',{maxZoom:20}).setView([44.55490, -72.61390], 17);
 
 L.control.layers({
     'Base Map': L.mapbox.tileLayer('landplanner.h3mhoan3').addTo(map),
+    'Terrain': L.mapbox.tileLayer('reyemtm.k6mom345')
 }, {
     'SenseFly Imagery': L.tileLayer('movegas/{z}/{x}/{y}.png', {attribution: 'SenseFly UAV Imagery provided by the UVM SAL'}),
     'Property Boundaries': omnivore.geojson('morristown_corners.geojson'),
     'e911 Road Centerlines': omnivore.geojson('morristown_corners_rds.geojson')
+    
 }).addTo(map);
 </script>
 
