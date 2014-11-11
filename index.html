@@ -43,7 +43,6 @@ var map = L.map('map',{maxZoom:20}).setView([44.55490, -72.61390], 17);
 
 L.control.layers({
     'Base Map': L.mapbox.tileLayer('landplanner.h3mhoan3').addTo(map),
-    'Satellite': L.mapbox.tileLayer('landplanner.jm6gk0ba')
 }, {
     'SenseFly Imagery': L.tileLayer('movegas/{z}/{x}/{y}.png', {attribution: 'SenseFly UAV Imagery provided by the UVM SAL'}),
     'Property Boundaries': omnivore.geojson('morristown_corners.geojson'),
